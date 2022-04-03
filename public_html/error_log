@@ -1,0 +1,1 @@
+[09-Feb-2020 21:35:31 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement or after any declare call in the script in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/app/Http/Middleware/CheckLogin.php on line 4

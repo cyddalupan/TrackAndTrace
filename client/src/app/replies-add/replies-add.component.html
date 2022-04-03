@@ -1,0 +1,12 @@
+<br><br><br>
+<p *ngIf="!(unique$ | async)"> No more uknown message from users. </p>
+<form *ngIf="(unique$ | async) as unique">
+  <div class="form-group">
+    <label>User Message: {{unique.message}}</label>
+    <input [(ngModel)]="reply.reply" name="reply" type="text" class="form-control" placeholder="reply">
+  </div>
+  <button (click)="submit()" type="sent" class="btn btn-primary">sent</button>
+  <p>
+    NOTE: Typing number on reply means redirect to a quest.
+  </p>
+</form>

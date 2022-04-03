@@ -1,0 +1,31 @@
+<form>
+  <div class="form-group">
+    <label *ngIf="this.category as category">Add new Keyword for {{(category.name)}}</label>
+    <input [(ngModel)]="keywordInput" name="keywordInput" type="text" class="form-control" placeholder="Keyword">
+  </div>
+  <button (click)="submit()" type="sent" class="btn btn-primary">Add</button>
+</form>
+
+<h2>Keywords</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Keyword</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let keyword of keywords$ | async">
+      <td>{{keyword.keyword}}</td>
+      <td><!--[Edit Soon]--></td>
+      <td>
+        <button mat-raised-button 
+          color="accent"
+          (click)="delete(keyword.id)">
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

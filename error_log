@@ -1,0 +1,35 @@
+[16-Oct-2019 05:57:02 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[23-Oct-2019 02:46:24 America/Chicago] PHP Fatal error:  Out of memory (allocated 805314560) (tried to allocate 16777216 bytes) in phar:///home2/iwebphil/public_html/devinehealthmedical.com/msg/composer.phar/src/Composer/DependencyResolver/Pool.php on line 339
+[23-Oct-2019 02:47:57 America/Chicago] PHP Fatal error:  Out of memory (allocated 805314560) (tried to allocate 16777216 bytes) in phar:///home2/iwebphil/public_html/devinehealthmedical.com/msg/composer.phar/src/Composer/DependencyResolver/Pool.php on line 339
+[23-Oct-2019 22:42:25 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[23-Oct-2019 23:29:14 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[24-Oct-2019 00:09:43 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[28-Oct-2019 22:29:02 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[28-Oct-2019 23:03:35 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[29-Oct-2019 00:11:30 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[10-Nov-2019 03:21:42 America/Chicago] PHP Fatal error:  Out of memory (allocated 784343040) (tried to allocate 37748736 bytes) in phar:///home2/iwebphil/public_html/devinehealthmedical.com/msg/composer.phar/src/Composer/DependencyResolver/RuleSet.php on line 90
+[10-Nov-2019 03:23:14 America/Chicago] PHP Fatal error:  Out of memory (allocated 784343040) (tried to allocate 37748736 bytes) in phar:///home2/iwebphil/public_html/devinehealthmedical.com/msg/composer.phar/src/Composer/DependencyResolver/RuleSet.php on line 90
+[10-Nov-2019 03:55:30 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/app/Console/Kernel.php on line 35
+[10-Nov-2019 03:56:02 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/app/Console/Kernel.php on line 35
+[10-Nov-2019 03:57:01 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/app/Console/Kernel.php on line 35
+[02-Jan-2020 15:19:24 America/Chicago] PHP Fatal error:  Out of memory (allocated 788537344) (tried to allocate 33554440 bytes) in phar:///home2/iwebphil/public_html/devinehealthmedical.com/msg/composer.phar/src/Composer/DependencyResolver/RuleSet.php on line 83
+[10-Jan-2020 17:13:49 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[28-Feb-2020 21:34:39 America/Chicago] PHP Parse error:  syntax error, unexpected ''./../storage/app/'' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ')' in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/app/Console/Kernel.php on line 153
+[29-Feb-2020 12:22:37 Asia/Manila] Some message here.
+[29-Feb-2020 04:23:00 UTC] Some message here2.
+[29-Feb-2020 04:23:00 UTC] Some message here1.
+[29-Feb-2020 12:23:00 Asia/Manila] Some message here.
+[29-Feb-2020 04:26:30 UTC] Some message here2.
+[29-Feb-2020 04:26:30 UTC] Some message here1.
+[29-Feb-2020 12:26:30 Asia/Manila] Some message here.
+[29-Feb-2020 04:28:13 UTC] Some message here2.
+[29-Feb-2020 04:28:13 UTC] Some message here1.
+[29-Feb-2020 12:28:13 Asia/Manila] Some message here.
+[29-Feb-2020 04:30:20 UTC] Some message here2.
+[29-Feb-2020 04:30:20 UTC] Some message here1.
+[29-Feb-2020 12:30:20 Asia/Manila] Some message here.
+[29-Feb-2020 04:32:10 UTC] Some message here2.
+[29-Feb-2020 04:32:10 UTC] Some message here1.
+[29-Feb-2020 12:32:10 Asia/Manila] Some message here.
+[01-Mar-2020 21:57:53 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/public_html/devinehealthmedical.com/msg/track-and-trace/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18
+[15-Jun-2020 14:44:56 America/Chicago] PHP Parse error:  syntax error, unexpected '.', expecting '&' or variable (T_VARIABLE) in /home2/iwebphil/c19healthcare.net/mbs/data/vendor/symfony/var-dumper/Resources/functions/dump.php on line 18

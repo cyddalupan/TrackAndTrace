@@ -1,0 +1,33 @@
+<form>
+  <div class="form-group">
+    <label>Add new Category</label>
+    <input [(ngModel)]="category" name="category" type="text" class="form-control" placeholder="Category">
+  </div>
+  <button (click)="submit()" type="sent" class="btn btn-primary">Add</button>
+</form>
+
+<h2>Categories</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Category</th>
+      <th scope="col"></th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let category of categories$ | async">
+      <td>
+        <a routerLink="/category/{{ category.id }}">
+          {{category.name}}
+        </a>
+      </td>
+      <td></td>
+      <td>
+        <a routerLink="/categories" (click)="delete(category.id)">
+          delete
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

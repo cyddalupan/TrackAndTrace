@@ -1,0 +1,112 @@
+<div class="container">
+  <div class="casegen">
+    <br><br>
+    <form>
+      <div class="form-group">
+        <label>Message</label>
+        <input [(ngModel)]="casegenRequest.message" name="message" type="email" class="form-control" aria-describedby="message" placeholder="message">
+      </div>
+      <div class="option-container">
+        <div class="by-two">
+          <div class="form-group">
+            <label>Option</label>
+            <input [(ngModel)]="casegenOptions.option1" name="option1" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="by-two">
+          <div class="form-group">
+            <label>Quest ID</label>
+            <input [(ngModel)]="casegenOptions.quest1" name="quest1" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.option2" name="option2" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.quest2" name="quest2" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.option3" name="option3" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.quest3" name="quest3" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.option4" name="option4" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.quest4" name="quest4" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.option5" name="option5" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.quest5" name="quest5" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.option6" name="option6" maxlength="19" type="text" class="form-control" aria-describedby="option" placeholder="option">
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="form-group">
+            <input [(ngModel)]="casegenOptions.quest6" name="quest6" type="number" class="form-control" aria-describedby="quest" placeholder="Quest ID">
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+          <label>Category</label>
+        <select [(ngModel)]="casegenRequest.category_id" name="category_id" class="custom-select">
+          <option selected value="0">Select report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Subcategory</label>
+        <input [(ngModel)]="casegenRequest.subcategory" name="subcategory" type="email" class="form-control" aria-describedby="subcategory" placeholder="subcategory">
+      </div>
+      <div class="form-group">
+        <label>Claimant</label>
+        <input [(ngModel)]="casegenRequest.claimant" name="claimant" type="text" class="form-control" aria-describedby="claimant" placeholder="claimant">
+      </div>
+      <div class="form-group">
+        <label>Severity</label> 
+        <input [(ngModel)]="casegenRequest.severity" name="severity" type="number" class="form-control" aria-describedby="claimant" placeholder="Severity">
+      </div>
+      <div class="form-group">
+        <label>Remarks</label>
+        <input [(ngModel)]="casegenRequest.remarks" name="remarks" type="email" class="form-control" aria-describedby="remarks" placeholder="remarks">
+      </div>
+      <button (click)="submit()" type="submit" class="btn btn-primary">save</button>
+    </form>
+  </div>
+  <div class="info-bar">
+    <app-info-bar></app-info-bar>
+  </div>
+</div>

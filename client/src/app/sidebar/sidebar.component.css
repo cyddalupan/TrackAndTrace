@@ -1,0 +1,11 @@
+mat-list-item a i {
+    vertical-align: middle;
+}
+
+.sub-list {
+  margin-left: 30px;
+}
+
+.link-blue {
+  color: #007bff;
+}

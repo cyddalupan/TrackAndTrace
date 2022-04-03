@@ -1,0 +1,176 @@
+<h1>
+  Edit Report
+</h1>
+
+<form>
+  <div class="form-group">
+    <label>User/Applicant</label>
+    <select [(ngModel)]="editReport.fb_id" name="fb_id" class="custom-select">
+      <option selected value="0">Select User/Applicant</option>
+      <option *ngFor="let fbuser of fbusers$ | async"  value="{{fbuser.fb_id}}">{{fbuser.fb_name}}</option>
+    </select>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="form-group">
+        <label>Report Category</label>
+        <select [(ngModel)]="editReport.report_category_id" name="category_id" class="custom-select">
+          <option selected value="0">Select report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label>Severity (1 to 9)</label>
+        <input [(ngModel)]="editReport.severity"
+               type="text" 
+               pattern="\d*"
+               maxlength="1"
+               class="form-control"
+               name="severity"
+               aria-describedby="severity"
+               placeholder="Severity">
+      </div>
+    </div>
+  </div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Other Categories</th>
+        <th scope="col">Severity</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let severity of reportSeverity">
+        <td>{{severity.category_name}}</td>
+        <td>{{severity.severity}}</td>
+        <td>
+          <button mat-icon-button color="accent" (click)="deleteSeverity(severity.id)">
+            <mat-icon>delete_forever</mat-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="row" *ngIf="editReport.report_category_id !== 0">
+    <div class="col-8">
+      <div class="form-group" >
+        <label>Other Category</label>
+        <select [(ngModel)]="otherCategory1.id" name="other-category-1" class="custom-select">
+          <option selected value="0">Select other report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <label>Severity (1 to 9)</label>
+        <input [(ngModel)]="otherCategory1.severity"
+               type="text" 
+               pattern="\d*"
+               maxlength="1"
+               class="form-control"
+               name="severity1"
+               aria-describedby="severity"
+               placeholder="Severity">
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="otherCategory1.id !== 0">
+    <div class="col-8">
+      <div class="form-group">
+        <select [(ngModel)]="otherCategory2.id" name="other-category-2" class="custom-select">
+          <option selected value="0">Select other report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <input [(ngModel)]="otherCategory2.severity"
+               type="text" 
+               pattern="\d*"
+               maxlength="1"
+               class="form-control"
+               name="severity2"
+               aria-describedby="severity"
+               placeholder="Severity">
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="otherCategory2.id !== 0">
+    <div class="col-8">
+      <div class="form-group">
+        <select [(ngModel)]="otherCategory3.id" name="other-category-3" class="custom-select">
+          <option selected value="0">Select other report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <input [(ngModel)]="otherCategory3.severity"
+               type="text" 
+               pattern="\d*"
+               maxlength="1"
+               class="form-control"
+               name="severity3"
+               aria-describedby="severity"
+               placeholder="Severity">
+      </div>
+    </div>
+  </div>
+  <div class="row" *ngIf="otherCategory3.id !== 0">
+    <div class="col-8">
+      <div class="form-group">
+        <select [(ngModel)]="otherCategory4.id" name="other-category-4" class="custom-select">
+          <option selected value="0">Select other report category</option>
+          <option *ngFor="let category of categories$ | async"  value="{{category.id}}">{{category.name}}</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="form-group">
+        <input [(ngModel)]="otherCategory4.severity"
+               type="text" 
+               pattern="\d*"
+               maxlength="1"
+               class="form-control"
+               name="severity4"
+               aria-describedby="severity"
+               placeholder="Severity">
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label>Sub-category</label>
+    <input [(ngModel)]="editReport.sub_category"
+           type="text"
+           class="form-control"
+           name="sub_category"
+           aria-describedby="sub_category"
+           placeholder="sub category">
+  </div>
+  <div class="form-group">
+    <label>Claimant</label>
+    <input [(ngModel)]="editReport.claimant"
+           type="text"
+           class="form-control"
+           name="claimant"
+           aria-describedby="claimant"
+           placeholder="Claimant">
+  </div>
+  <div class="form-group">
+    <label>Remarks</label>
+    <input [(ngModel)]="editReport.remarks"
+           type="text"
+           class="form-control"
+           name="remarks"
+           aria-describedby="remarks"
+           placeholder="Remarks">
+  </div>
+  <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+</form>
+  
